@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure Random Password Generator for Strong Passwords">
     <title>Premium Password Generator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <header>
             <h1>Random Password Generator</h1>
             <p>Create strong and secure passwords to keep your account safe online.</p>
         </header>
+        
+        <!-- Main Content -->
         <main>
-            <div class="password-display">
-                <input type="text" id="password" readonly>
-                <button id="strength" class="strength-strong">Very Strong</button>
-                <button id="reset" class="btn-icon">&#x21bb;</button>
-                <button id="copy" class="btn-primary">Copy</button>
-            </div>
-            <div class="controls">
+            <!-- Password Display Section -->
+            <section class="password-display">
+                <input type="text" id="password" readonly placeholder="Your Secure Password">
+                <div class="password-controls">
+                    <button id="strength" class="strength-strong">Very Strong</button>
+                    <button id="reset" class="btn-icon" title="Reset Password">&#x21bb;</button>
+                    <button id="copy" class="btn-primary">Copy</button>
+                </div>
+            </section>
+
+            <!-- Controls Section -->
+            <section class="controls">
+                <!-- Password Length Slider -->
                 <div class="length-control">
-                    <label>Password Length:</label>
+                    <label for="length">Password Length:</label>
                     <div class="slider-container">
                         <input type="range" id="length" min="6" max="50" value="23">
                         <span id="length-value">23</span>
                     </div>
                 </div>
+                
+                <!-- Character Options -->
                 <div class="character-options">
                     <label>Characters Used:</label>
                     <div class="checkbox-group">
@@ -48,14 +60,18 @@
                         </label>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
+
+        <!-- Footer Section -->
         <footer>
             <div class="credits-container">
-                <p>Credits to <a href="https://medium.com/@Linuxlearners" target="_blank">Linux Learners</a> for their resources.</p>
+                <p>Credits to <a href="https://medium.com/@Linuxlearners" target="_blank" rel="noopener noreferrer">Linux Learners</a> for their resources.</p>
             </div>
         </footer>
     </div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
