@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #000000, #000000);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #000000;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(247, 2, 2, 0.325);
+    color: #f9f9f9;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Container for Credits */
+.credits-container {
+    background: rgba(0, 0, 0, 0.6); /* Dark background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+footer p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 0;
+}
+
+footer a {
+    color: #4D96FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #3efa00c1;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    color: #ff0000;
+}
+
+/* Password Display */
+.password-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#password {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+#strength {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #0af011;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+.btn-primary, .btn-icon {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-icon {
+    background: #e0e0e0;
+    color: #4a4a4a;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+/* Controls Section */
+.controls {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.length-control {
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, #e1171a, #2196f3, #1ee954);
+    outline: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #2196f3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+}
+
+.character-options {
+    text-align: center;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.checkbox-item {
+    background: #000000;
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.293);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-item input:checked + .checkbox-label {
+    color: #ffffff;
+    background: linear-gradient(90deg, #20db395d, #20db398b);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.checkbox-label {
+    font-size: 1rem;
+    color: #fffbfb;
+}
